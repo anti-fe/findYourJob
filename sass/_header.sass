@@ -1,0 +1,32 @@
+.header 
+    background-color: $color-bg;
+    padding-top: 50px
+    padding-bottom: 75px
+
+    &__nav
+        +flex(space-between, center)
+        
+    &__nav-cont
+        +flex(none, center)
+        list-style-type: none
+    &__nav-item:not(:last-child)
+        margin-right: 20px
+    &__nav-link
+        text-decoration: none
+        color: $color-black
+    &__nav-link:hover 
+        color: $color-accent
+    &__btns
+        display: flex
+    &__sign-in
+        cursor: pointer
+        padding: 15px 40px
+        background-color: transparent
+        border: none 
+    &__sign-up
+        cursor: pointer
+        padding: 15px 30px
+        background-color: $color-accent
+        border-radius: 5px
+        border: none
+        color: #fff

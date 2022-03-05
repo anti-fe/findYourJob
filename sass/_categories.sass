@@ -1,0 +1,22 @@
+.categories 
+    padding: 70px 0 80px 0
+    background-color: #fff
+    &__card-list
+        +flex(space-between,center)
+        flex-wrap: wrap
+    &__card
+        background-color: $color-bg
+        +flex(center, center)
+        flex-direction: column
+        width: 166px
+        height: 122px
+        border-radius: 10px
+        transition: background-color .2s ease 
+    &__card:hover
+        background-color: $color-accent
+        color:#fff
+    &__card:hover &__card-icon path
+        fill: #fff
+    &__card-title
+        font-weight: 400
+        margin-top: 15px
